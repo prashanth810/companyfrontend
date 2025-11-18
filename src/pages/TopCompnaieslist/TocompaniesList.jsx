@@ -24,7 +24,7 @@ const TocompaniesList = () => {
     const allCompanies = companydata?.data || [];
 
     return (
-        <section className="max-w-7xl mx-auto px-4 py-10">
+        <section className="x:px-4 lg:px-3 md:px-2 px-1">
 
             {/* Loader */}
             {(companyloading || filterLoading) && (

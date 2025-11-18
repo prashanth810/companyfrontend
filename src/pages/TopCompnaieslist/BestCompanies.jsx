@@ -16,7 +16,7 @@ const BestCompanies = () => {
     const best = allCompanies.filter(item => item.rating > 3.5 && item.rating <= 4.2);
 
     return (
-        <>
+        <section className="max-w-7xl mx-auto x:px-4 lg:px-3 md:px-2 px-1">
             <h2 className="text-lg md:text-xl font-semibold text-white mt-10 px-1">
                 Best Companies
             </h2>
@@ -52,7 +52,7 @@ const BestCompanies = () => {
                         mt-4
                     "
                 >
-                    {best.map((item) => (
+                    {best.slice(0, 4).map((item) => (
                         <div
                             key={item._id}
                             className="
@@ -92,7 +92,7 @@ const BestCompanies = () => {
                     ))}
                 </div>
             )}
-        </>
+        </section>
     );
 };
 

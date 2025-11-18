@@ -11,7 +11,7 @@ const Startup = () => {
     const startups = allCompanies.filter(item => item.rating <= 3.5);
 
     return (
-        <section className="w-full mt-10">
+        <section className="max-w-7xl mx-auto x:px-4 lg:px-3 md:px-2 px-1 py-10 mt-5">
 
             {/* Section Title */}
             <h2 className="text-xl sm:text-2xl font-semibold text-white mb-4 px-1">
@@ -36,7 +36,7 @@ const Startup = () => {
                 sm:grid-cols-2 
                 md:grid-cols-3 
                 lg:grid-cols-4 
-                xl:grid-cols-5
+                xl:grid-cols-4
                 gap-4 
                 mt-4
                 "
@@ -51,7 +51,7 @@ const Startup = () => {
 
                 {/* Cards */}
                 {!companyloading && startups.length > 0 &&
-                    startups.map((item) => (
+                    startups.slice(0, 4).map((item) => (
                         <div
                             key={item._id}
                             className="

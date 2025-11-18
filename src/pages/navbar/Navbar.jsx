@@ -13,9 +13,11 @@ const Navbar = () => {
                 <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
 
                     {/* Logo */}
-                    <h2 className="text-2xl font-semibold tracking-wide">
-                        startup <span className="font-bold">RANKING</span>
-                    </h2>
+                    <NavLink to={'/'}>
+                        <h2 className="text-2xl font-semibold tracking-wide">
+                            startup <span className="font-bold">RANKING</span>
+                        </h2>
+                    </NavLink>
 
                     {/* Desktop Menu */}
                     <div className="hidden md:flex space-x-6 text-sm font-medium">
